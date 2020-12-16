@@ -41,7 +41,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
       }
       ```
 
-      - `.prettierrc`
+    - `.prettierrc`
 
       ```json
       "@moia-dev/eslint-prettier-typescript-config/config/prettier"
