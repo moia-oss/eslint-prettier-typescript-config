@@ -62,3 +62,28 @@ Shared MOIA TypeScript, eslint and prettier configuration
     }
 
 4. Done! Don't forget to run `build`, `lint` and `format:check` in your CI workflow.
+
+## Optional Additions
+
+- VSCode lint/format settings in `.vscode/settings.json`
+
+    ```json
+    {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      }
+    }
+    ```
+
+- `.editorconfig`
+
+    ```ini
+    [*]
+    end_of_line = lf
+    insert_final_newline = true
+    charset = utf-8
+    indent_style = space
+    indent_size = 2
+    ```
