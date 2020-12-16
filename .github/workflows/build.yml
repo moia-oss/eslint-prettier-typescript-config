@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - name: Build image
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2.2.1
         with:
           repository: nihalgonsalves/node-typescript-eslint-template
           tags: latest
