@@ -1,10 +1,10 @@
 {
-  "name": "node-typescript-eslint-template",
-  "description": "",
+  "name": "@moia-dev/eslint-prettier-typescript-config",
+  "description": "Shared MOIA TypeScript, eslint and prettier configuration",
   "version": "0.0.1",
   "main": "build/index.js",
-  "author": "",
-  "license": "",
+  "author": "MOIA GmbH",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "start": "NODE_ENV=production node build/index.js",
