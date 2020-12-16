@@ -1,0 +1,25 @@
+name: build
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: Build image
+        uses: docker/build-push-action@v1
+        with:
+          repository: nihalgonsalves/node-typescript-eslint-template
+          tags: latest
+          push: false
+      - name: Run image
+        run: docker run nihalgonsalves/node-typescript-eslint-template
