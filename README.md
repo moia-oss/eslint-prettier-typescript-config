@@ -78,6 +78,12 @@ Shared MOIA TypeScript, eslint and prettier configuration
   }
   ```
 
+- VSCode extension recommendations in `.vscode/extensions.json`
+
+  ```json
+  { "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"] }
+  ```
+
 - `.editorconfig`
 
   ```ini
@@ -88,3 +94,11 @@ Shared MOIA TypeScript, eslint and prettier configuration
   indent_style = space
   indent_size = 2
   ```
+
+## Config Development
+
+> This relates to the development of _this package_. Ignore this section as a consumer.
+
+This package uses its own exported config to build, lint and format itself. This also makes sure that the configs are valid, as the steps are run during the GitHub Actions build step.
+
+Because of this, you _must_ run `yarn build` before linting or formatting during development
