@@ -1,7 +1,7 @@
 {
   "name": "@moia-dev/eslint-prettier-typescript-config",
   "description": "Shared MOIA TypeScript, eslint and prettier configuration",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "MOIA GmbH",
