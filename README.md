@@ -4,6 +4,8 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
 ## Usage
 
+💡 Instead of bootstrapping your own project you could also make use of the [serverless-cdk-typescript-template](https://github.com/moia-dev/serverless-cdk-typescript-template) which uses the configurations contained in eslint-prettier-typescript-config.
+
 1. Install
 
    ```sh
