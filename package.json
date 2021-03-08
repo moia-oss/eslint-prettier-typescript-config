@@ -36,11 +36,11 @@
   "devDependencies": {
     "eslint": "^7.21.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {
     "eslint": "^7.21.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }
