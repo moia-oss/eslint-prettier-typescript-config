@@ -1,5 +1,5 @@
 {
-  "extends": "./config/eslint",
+  "extends": ["./config/eslint", "./config/eslint-strict"],
   "parserOptions": {
     "project": "./tsconfig.json"
   }
