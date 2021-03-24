@@ -21,7 +21,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
      ```json
      {
-       "extends": "./node_modules/@moia-dev/eslint-prettier-typescript-config/tsconfig.json",
+       "extends": "@moia-dev/eslint-prettier-typescript-config",
        "compilerOptions": {
          "outDir": "./build",
          "rootDir": "./src"
