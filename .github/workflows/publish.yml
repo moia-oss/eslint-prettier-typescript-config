@@ -7,15 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: 14
+          registry-url: 'https://registry.npmjs.org'
       - name: Extract tag version
         id: get_version
         run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-      - name: jfrog npm auth
-        run: curl -u ${{ secrets.JFROG_BASIC_AUTH }} https://moiadev.jfrog.io/moiadev/api/npm/npm-local/auth/moia-dev > ~/.npmrc
       - run: yarn install --frozen-lockfile
       - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn publish --no-git-tag-version --new-version ${{ steps.get_version.outputs.VERSION }}
