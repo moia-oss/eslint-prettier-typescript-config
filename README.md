@@ -10,7 +10,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
    ```sh
    yarn add -D typescript eslint prettier
-   yarn add -D @moia-dev/eslint-prettier-typescript-config
+   yarn add -D @moia-oss/eslint-prettier-typescript-config
    ```
 
 2. Link configurations
@@ -21,7 +21,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
      ```json
      {
-       "extends": "@moia-dev/eslint-prettier-typescript-config",
+       "extends": "@moia-oss/eslint-prettier-typescript-config",
        "compilerOptions": {
          "outDir": "./build",
          "rootDir": "./src"
@@ -35,9 +35,9 @@ Shared MOIA TypeScript, eslint and prettier configuration
      ```json
      {
        "extends": [
-         "./node_modules/@moia-dev/eslint-prettier-typescript-config/config/eslint.js",
-         "./node_modules/@moia-dev/eslint-prettier-typescript-config/config/eslint-react.js",
-         "./node_modules/@moia-dev/eslint-prettier-typescript-config/config/eslint-strict.js"
+         "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint.js",
+         "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-react.js",
+         "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-strict.js"
        ],
        "parserOptions": {
          "project": "./tsconfig.json"
@@ -48,7 +48,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
    - `.prettierrc`
 
      ```json
-     "@moia-dev/eslint-prettier-typescript-config/config/prettier"
+     "@moia-oss/eslint-prettier-typescript-config/config/prettier"
      ```
 
 3. Add scripts to `package.json`
