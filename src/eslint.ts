@@ -17,7 +17,7 @@ export = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   parserOptions: {
-    project: './**/tsconfig*.json',
+    project: '**/tsconfig*.json',
     // TODO: Enable when stable (https://github.com/typescript-eslint/typescript-eslint/issues/2094)
     // "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
