@@ -11,21 +11,23 @@
    limitations under the License.
 */
 
-import base from './eslint-base';
+import rules from './eslint-base-rules';
+
+// to be used _after_ extending the usual eslint config
+// e.g. extends: ['./path/to/eslint', './path/to/eslint-react']
 
 export = {
-  parser: base.parser,
-  plugins: base.plugins,
   extends: [
     'airbnb-typescript',
     'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // must be added again even though the base config includes it,
+    // so that it can turn off any style-related rules from the configs above
     'prettier',
-    'plugin:import/typescript',
   ],
   rules: {
-    ...base.rules,
+    // we need to add overrides again, since some of the base rules are turned
+    // back on by airbnb-typescript
+    ...rules,
     'react/state-in-constructor': ['error', 'never'],
     'react/static-property-placement': ['error', 'static public field'],
     'react/jsx-props-no-spreading': 'off',

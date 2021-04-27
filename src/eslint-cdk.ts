@@ -11,17 +11,13 @@
    limitations under the License.
 */
 
-import rules from './eslint-base-rules';
-
 export = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  extends: [
-    'airbnb-typescript/base',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/typescript',
-    'prettier',
-  ],
-  rules,
+  rules: {
+    // CDK uses side effects to init constructs
+    'no-new': 'off',
+    // Logging should be OK in CDK apps
+    'no-console': 'off',
+    // CDK deps are usually all devDependencies
+    'import/no-extraneous-dependencies': 'off',
+  },
 };
