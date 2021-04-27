@@ -61,7 +61,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
    {
      "scripts": {
        "build": "tsc",
-       "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
+       "lint": "eslint ./src/",
        "format": "prettier . --write",
        "format:check": "prettier . --check"
      }
