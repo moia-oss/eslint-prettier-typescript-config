@@ -37,9 +37,6 @@ Shared MOIA TypeScript, eslint and prettier configuration
          "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-react",
          "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-strict"
        ],
-       "parserOptions": {
-         "project": "./tsconfig.json"
-       },
        // Only add if you have a CDK directory, customise path as needed
        "overrides": [
          {
