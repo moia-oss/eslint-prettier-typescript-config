@@ -20,7 +20,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
    - `tsconfig.json`
 
-     ```json
+     ```jsonc
      {
        "extends": "@moia-oss/eslint-prettier-typescript-config",
        "compilerOptions": {
@@ -33,7 +33,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
    - `.eslintrc` (remove `react` and `strict` if not required. more info further down in this README).
 
-     ```json
+     ```jsonc
      {
        "extends": [
          "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint",
@@ -52,7 +52,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
    - `.prettierrc`
 
-     ```json
+     ```jsonc
      "@moia-oss/eslint-prettier-typescript-config/config/prettier"
      ```
 
@@ -60,7 +60,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
 
    (customise paths as needed)
 
-   ```json
+   ```jsonc
    {
      "scripts": {
        "build": "tsc",
@@ -147,7 +147,7 @@ The strict config enables a few more things that not every team may want:
 
 - VSCode lint/format settings in `.vscode/settings.json`
 
-  ```json
+  ```jsonc
   {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -159,7 +159,7 @@ The strict config enables a few more things that not every team may want:
 
 - VSCode extension recommendations in `.vscode/extensions.json`
 
-  ```json
+  ```jsonc
   { "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"] }
   ```
 
