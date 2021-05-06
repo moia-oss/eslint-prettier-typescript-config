@@ -10,7 +10,7 @@ Shared MOIA TypeScript, eslint and prettier configuration
    yarn add -D typescript eslint prettier
    yarn add -D @moia-oss/eslint-prettier-typescript-config
 
-   # it may be needed to also install these packages
+   # in some cases, you may need to install these packages directly:
    yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
    ```
 
