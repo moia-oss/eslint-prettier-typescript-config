@@ -22,6 +22,7 @@ export = {
     // "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
   extends: [
+    'airbnb',
     'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
