@@ -185,7 +185,10 @@ Because of this, you _must_ run `yarn build` before linting or formatting during
 ## Release
 
 In order to get a new version released based on the latest commits first you can get the git log by running the following command, the version tag you can verify it on [tags](https://github.com/moia-oss/eslint-prettier-typescript-config/tags)
-`git log --oneline VERSION_TAG..HEAD | tail -r`
+
+```
+git log --oneline VERSION_TAG..HEAD | tail -r
+```
 
 copy the printed log and go to the [new release](https://github.com/moia-oss/eslint-prettier-typescript-config/releases/new)
 
