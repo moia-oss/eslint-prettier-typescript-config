@@ -11,8 +11,8 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn install --frozen-lockfile
+      - run: npm ci
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --no-git-tag-version --new-version ${GITHUB_REF/refs\/tags\//}
+        run: npm run publish --no-git-tag-version --new-version ${GITHUB_REF/refs\/tags\//}
