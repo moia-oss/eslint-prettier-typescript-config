@@ -1,0 +1,41 @@
+name: dependencies
+on:
+  push: {}
+  workflow_dispatch: {}
+  schedule:
+    # "At 06:00 on Wednesday" UTC
+    # i.e. 7 am CET or 8 am CEST
+    # https://crontab.guru/#0_6_*_*_1
+    - cron: 0 6 * * 3
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Update Dependencies
+        run: |
+          npm ci
+          npx ncu -u --packageFile package.json --filterVersion "/^[~^<>]| - |\.x$/"
+          npm install --lockfile-only
+      - name: Create Pull Request
+        with:
+          committer: GitHub Actions <actions@github.com>
+          commit-message: 'chore(deps): update all 🚀'
+          title: 'chore(deps): update all 🚀'
+          body: |
+            Dep-update hooks:
+
+            If any of the strings above doesn't equal `success`, please resolve the issues manually.
+
+            More info can be found in the `dependencies.yml` action's log output
+
+          author: GitHub Actions <actions@github.com>
+          branch: chore/update-dependencies
+          delete-branch: true
+          branch-suffix: timestamp
+        uses: peter-evans/create-pull-request@v5

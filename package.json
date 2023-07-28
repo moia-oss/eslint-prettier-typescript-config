@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.bootstrap.json",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
     "format": "prettier . --write",
     "format:check": "prettier . --check"
