@@ -15,4 +15,4 @@ jobs:
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run publish --no-git-tag-version --new-version ${GITHUB_REF/refs\/tags\//}
+        run: npm publish --no-git-tag-version --new-version ${GITHUB_REF/refs\/tags\//}
