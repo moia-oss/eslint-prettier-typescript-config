@@ -2,10 +2,10 @@ name: dependencies
 on:
   workflow_dispatch: {}
   schedule:
-    # "At 06:00 on Wednesday" UTC
+    # "At 06:00 on Tuesday" UTC
     # i.e. 7 am CET or 8 am CEST
     # https://crontab.guru/#0_6_*_*_1
-    - cron: 0 6 * * 3
+    - cron: 0 6 * * 2
 
 jobs:
   update:
