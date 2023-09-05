@@ -184,16 +184,5 @@ Because of this, you _must_ run `npm run build` before linting or formatting dur
 
 ## Release
 
-In order to get a new version released based on the latest commits first you can get the git log by running the following command, the version tag you can verify it on [tags](https://github.com/moia-oss/eslint-prettier-typescript-config/tags)
-
-```
-git log --oneline VERSION_TAG..HEAD | tail -r
-```
-
-copy the printed log and go to the [new release](https://github.com/moia-oss/eslint-prettier-typescript-config/releases/new)
-
-- Add a new title to the next release
-- Paste the previously copied log
-- Click on release
-
-After this a github action will be triggered and the new version will be published.
+We will automatically release on push to main.
+Make sure to update the package version according to your change following semantic versioning
