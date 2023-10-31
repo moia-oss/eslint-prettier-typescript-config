@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git://github.com/moia-oss/eslint-prettier-typescript-config.git"
   },
-  "version": "2.0.14",
+  "version": "2.0.15",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "MOIA GmbH",
