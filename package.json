@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git://github.com/moia-oss/eslint-prettier-typescript-config.git"
   },
-  "version": "2.0.21",
+  "version": "2.0.22",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "MOIA GmbH",
@@ -24,8 +24,8 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
