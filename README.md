@@ -25,9 +25,9 @@ Shared MOIA TypeScript, eslint and prettier configuration
        "extends": "@moia-oss/eslint-prettier-typescript-config",
        "compilerOptions": {
          "outDir": "./build",
-         "rootDir": "./src"
+         "rootDir": "./src",
        },
-       "include": ["./src"]
+       "include": ["./src"],
      }
      ```
 
@@ -38,15 +38,15 @@ Shared MOIA TypeScript, eslint and prettier configuration
        "extends": [
          "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint",
          "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-react",
-         "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-strict"
+         "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-strict",
        ],
        // Only add if you have a CDK directory, customise path as needed
        "overrides": [
          {
            "files": ["cdk/**/*"],
-           "extends": ["./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-cdk"]
-         }
-       ]
+           "extends": ["./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-cdk"],
+         },
+       ],
      }
      ```
 
@@ -66,8 +66,8 @@ Shared MOIA TypeScript, eslint and prettier configuration
        "build": "tsc",
        "lint": "eslint ./src/",
        "format": "prettier . --write",
-       "format:check": "prettier . --check"
-     }
+       "format:check": "prettier . --check",
+     },
    }
    ```
 
@@ -152,8 +152,8 @@ The strict config enables a few more things that not every team may want:
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    }
+      "source.fixAll.eslint": true,
+    },
   }
   ```
 
