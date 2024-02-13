@@ -20,4 +20,4 @@ export = {
     // CDK deps are usually all devDependencies
     'import/no-extraneous-dependencies': 'off',
   },
-};
+}

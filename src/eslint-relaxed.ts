@@ -10,8 +10,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-import rules from './eslint-relaxed-rules';
+import rules from './eslint-relaxed-rules'
 
 export = {
   parser: '@typescript-eslint/parser',
@@ -21,6 +20,6 @@ export = {
     // TODO: Enable when stable (https://github.com/typescript-eslint/typescript-eslint/issues/2094)
     // "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
-  extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
+  extends: ['plugin:@typescript-eslint/recommended'],
   rules,
-};
+}

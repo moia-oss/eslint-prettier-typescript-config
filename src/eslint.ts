@@ -10,8 +10,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-import rules from './eslint-base-rules';
+import rules from './eslint-base-rules'
 
 export = {
   parser: '@typescript-eslint/parser',
@@ -22,12 +21,8 @@ export = {
     // "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
   extends: [
-    'airbnb',
-    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/typescript',
-    'prettier',
   ],
   rules,
-};
+}
