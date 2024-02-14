@@ -44,7 +44,9 @@ Shared MOIA TypeScript, eslint and prettier configuration
        "overrides": [
          {
            "files": ["cdk/**/*"],
-           "extends": ["./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-cdk"],
+           "extends": [
+             "./node_modules/@moia-oss/eslint-prettier-typescript-config/config/eslint-cdk",
+           ],
          },
        ],
      }
@@ -107,40 +109,39 @@ The strict config enables a few more things that not every team may want:
   // Error:
 
   type Foo = {
-    x: 1;
-  };
+    x: 1
+  }
   // no error thrown, silently continues
-  const foo = JSON.parse('{"y":1}') as Foo;
+  const foo = JSON.parse('{"y":1}') as Foo
 
   // evauluates silently to NaN:
-  foo.x + 1;
+  foo.x + 1
 
   // this also silently continues:
-  const bar = JSON.parse('{"xyz":1}') as { x: { y: number } };
+  const bar = JSON.parse('{"xyz":1}') as { x: { y: number } }
 
   // you won't see a problem in runtime until somewhere
   // else in the code, making it hard to trace:
 
   // throws `Uncaught TypeError: Cannot read property 'y' of undefined`
-  console.log(bar.x.y);
+  console.log(bar.x.y)
   ```
 
   ```ts
   // OK:
-
-  import * as z from 'zod';
+  import * as z from 'zod'
 
   const FooSchema = z.object({
     x: z.number(),
-  });
+  })
 
-  type Foo = z.infer<typeof FooSchema>;
+  type Foo = z.infer<typeof FooSchema>
 
   // parses successfully
-  const foo = FooSchema.parse(JSON.parse('{"x":1}'));
+  const foo = FooSchema.parse(JSON.parse('{"x":1}'))
 
   // throws an error detailing why the JSON doesn't match
-  const bar = FooSchema.parse(JSON.parse('{"y":1}'));
+  const bar = FooSchema.parse(JSON.parse('{"y":1}'))
   ```
 
 ## Optional Additions

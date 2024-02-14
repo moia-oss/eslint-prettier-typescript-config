@@ -14,7 +14,10 @@
 export = {
   'no-unsafe-optional-chaining': 'error',
   'no-void': ['error', { allowAsStatement: true }],
-  '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true, argsIgnorePattern: '^_' }],
+  '@typescript-eslint/no-unused-vars': [
+    'error',
+    { ignoreRestSiblings: true, argsIgnorePattern: '^_' },
+  ],
   '@typescript-eslint/consistent-type-imports': 'error',
   '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
   '@typescript-eslint/prefer-optional-chain': 'error',
@@ -28,4 +31,4 @@ export = {
       'ts-check': false,
     },
   ],
-};
+}

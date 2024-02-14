@@ -10,20 +10,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-import rules from './eslint-base-rules';
+import rules from './eslint-base-rules'
 
 // to be used _after_ extending the usual eslint config
 // e.g. extends: ['./path/to/eslint', './path/to/eslint-react']
 
 export = {
-  extends: [
-    'airbnb-typescript',
-    'airbnb/hooks',
-    // must be added again even though the base config includes it,
-    // so that it can turn off any style-related rules from the configs above
-    'prettier',
-  ],
   rules: {
     // we need to add overrides again, since some of the base rules are turned
     // back on by airbnb-typescript
@@ -33,4 +25,4 @@ export = {
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',
   },
-};
+}
