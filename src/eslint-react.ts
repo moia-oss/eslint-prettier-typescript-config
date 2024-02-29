@@ -10,7 +10,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-import rules from './eslint-base-rules'
+import rules from './eslint-base-rules';
 
 // to be used _after_ extending the usual eslint config
 // e.g. extends: ['./path/to/eslint', './path/to/eslint-react']
@@ -25,4 +25,4 @@ export = {
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',
   },
-}
+};

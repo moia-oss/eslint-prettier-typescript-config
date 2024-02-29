@@ -10,7 +10,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-import rules from './eslint-base-rules'
+import rules from './eslint-base-rules';
 
 export = {
   parser: '@typescript-eslint/parser',
@@ -25,4 +25,4 @@ export = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   rules,
-}
+};
