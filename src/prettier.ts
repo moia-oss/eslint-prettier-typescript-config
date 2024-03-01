@@ -15,10 +15,9 @@ export = {
   tabWidth: 2,
   singleQuote: true,
   trailingComma: 'all',
-  semi: false,
   arrowParens: 'avoid',
   bracketSpacing: true,
   bracketSameLine: false,
   printWidth: 80,
   plugins: ['@trivago/prettier-plugin-sort-imports'],
-}
+};

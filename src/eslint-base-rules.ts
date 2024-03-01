@@ -31,4 +31,4 @@ export = {
       'ts-check': false,
     },
   ],
-}
+};
