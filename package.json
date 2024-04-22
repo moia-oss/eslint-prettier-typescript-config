@@ -21,7 +21,8 @@
     "prepublishOnly": "npm run build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "prepare": "husky"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
@@ -35,7 +36,8 @@
     "eslint": "8.57.0",
     "npm-check-updates": "^16.14.18",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "husky": "^9.0.11"
   },
   "peerDependencies": {
     "eslint": "^8.31.1",
