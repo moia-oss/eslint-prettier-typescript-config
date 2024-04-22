@@ -22,7 +22,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "prepare": "husky"
+    "husky:prepare": "husky"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
