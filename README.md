@@ -183,6 +183,12 @@ This package uses its own exported config to build, lint and format itself. This
 
 Because of this, you _must_ run `npm run build` before linting or formatting during development
 
+## Husky hooks
+
+Husky is used to introduce git hooks.
+Link to the package https://typicode.github.io/husky/
+To install them, execute `npm run husky:prepare`
+
 ## Release
 
 We will automatically release on push to main.

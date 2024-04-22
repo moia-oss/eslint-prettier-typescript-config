@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+BRANCH=`git rev-parse --abbrev-ref HEAD`
+PROTECTED_BRANCHES="^(main)"
+
+
+if [[ "$BRANCH" =~ $PROTECTED_BRANCHES ]]
+then
+  echo 'you are trying to push to a protected branch!!!'
+  exit 1
+fi
