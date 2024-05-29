@@ -4,8 +4,8 @@ on:
   schedule:
     # "At 06:00 on the first Wednesday of every month" UTC
     # i.e. 7 am CET or 8 am CEST
-    # https://crontab.guru/#0_6_1-7_*_3
-    - cron: 0 6 1-7 * 3
+    # https://crontab.guru/#0_6_1-7_*_*/3
+    - cron: 0 6 1-7 * */3
 
 jobs:
   update:
