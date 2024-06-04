@@ -1,4 +1,4 @@
-# eslint-prettier-typescript-config
+# Getting Started with TypeScript, ESLint and Prettier
 
 _This project was once a collection of shared MOIA TypeScript, eslint and prettier configurations. It's now just a README._
 
@@ -54,7 +54,7 @@ The following steps presume you have an existing repository with a `package.json
 
 6. Configure ESLint
 
-   Create an `eslint.config.js`
+   Create an `eslint.config.js` file in your project root:
 
    ```js
    import eslint from "@eslint/js";
