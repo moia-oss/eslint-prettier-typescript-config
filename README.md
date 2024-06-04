@@ -2,7 +2,7 @@
 
 _This project was once a collection of shared MOIA TypeScript, eslint and prettier configurations. It's now just a README._
 
-This document is intended to be used as a starting point for setting up your TypeScript project with ESLint and Prettier.
+This document is intended to be a starting point for setting up your TypeScript project with ESLint and Prettier.
 
 The following steps presume you have an existing repository with a `package.json` (you can do this with `npm init`) that is [of type "module"](https://nodejs.org/api/packages.html#type).
 
@@ -81,7 +81,7 @@ The following steps presume you have an existing repository with a `package.json
 
 7. Add Scripts
 
-   Edit your `package.json` to include build, lint and format scripts:
+   Edit your `package.json` to include build, lint, and format scripts:
 
    ```json
    "scripts": {
@@ -105,7 +105,7 @@ The following steps presume you have an existing repository with a `package.json
   }
   ```
 
-- To recommend the ESLint and Prettier plugins vor VSCode, you can add this to your `.vscode/extensions.json`:
+- To recommend the ESLint and Prettier plugins for VSCode, you can add this to your `.vscode/extensions.json`:
 
   ```json
   {
