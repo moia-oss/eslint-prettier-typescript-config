@@ -8,9 +8,9 @@ The following steps presume you have an existing repository with a `package.json
 
 1. Install TypeScript
 
-  ```bash
-  npm install --save-dev typescript
-  ```
+    ```bash
+    npm install --save-dev typescript
+    ```
 
 2. Configure TypeScript
 
