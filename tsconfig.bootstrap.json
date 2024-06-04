@@ -1,9 +1,0 @@
-// This file is used to build _this_ repo and is not intended to be extended from
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./config",
-    "declaration": true
-  },
-  "include": ["./src"]
-}
