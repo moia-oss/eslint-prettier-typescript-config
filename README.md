@@ -2,6 +2,8 @@
 
 _This project was once a collection of shared MOIA TypeScript, eslint and prettier configurations. It's now just a README._
 
+_There will be no further releases of `@moia-oss/eslint-prettier-typescript-config`. The last published version is `3.0.9`._
+
 This document is intended to be a starting point for setting up your TypeScript project with ESLint and Prettier.
 
 The following steps presume you have an existing repository with a `package.json` (you can do this with `npm init`) that is [of type "module"](https://nodejs.org/api/packages.html#type).
